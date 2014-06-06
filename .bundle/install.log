@@ -1,0 +1,14 @@
+# Logfile created on 2014-06-06 19:22:26 +0200 by logger.rb/31641
+I, [2014-06-06T19:22:26.204822 #4666]  INFO -- : 0:  rlivsey-middleman (0.0.0) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/rlivsey-middleman-0.0.0.gemspec
+I, [2014-06-06T19:22:26.206336 #4666]  INFO -- : 0:  bundler (1.5.1) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/bundler-1.5.1.gemspec
+I, [2014-06-06T20:00:32.251243 #29561]  INFO -- : 0:  coderay (1.1.0) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/coderay-1.1.0.gemspec
+I, [2014-06-06T20:00:32.266721 #29561]  INFO -- : 0:  method_source (0.8.2) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/method_source-0.8.2.gemspec
+I, [2014-06-06T20:00:32.267338 #29561]  INFO -- : 0:  slop (3.4.7) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/slop-3.4.7.gemspec
+I, [2014-06-06T20:00:32.267925 #29561]  INFO -- : 0:  pry (0.9.12.6) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/pry-0.9.12.6.gemspec
+I, [2014-06-06T20:00:32.268535 #29561]  INFO -- : 0:  rlivsey-middleman (0.0.0) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/rlivsey-middleman-0.0.0.gemspec
+I, [2014-06-06T20:00:32.269154 #29561]  INFO -- : 0:  bundler (1.5.1) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/bundler-1.5.1.gemspec
+I, [2014-06-06T20:11:49.199590 #30073]  INFO -- : 0:  coderay (1.1.0) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/coderay-1.1.0.gemspec
+I, [2014-06-06T20:11:49.200179 #30073]  INFO -- : 0:  method_source (0.8.2) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/method_source-0.8.2.gemspec
+I, [2014-06-06T20:11:49.200632 #30073]  INFO -- : 0:  slop (3.4.7) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/slop-3.4.7.gemspec
+I, [2014-06-06T20:11:49.201101 #30073]  INFO -- : 0:  pry (0.9.12.6) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/pry-0.9.12.6.gemspec
+I, [2014-06-06T20:11:49.206455 #30073]  INFO -- : 0:  bundler (1.5.1) from /home/michal/.rvm/gems/ruby-1.9.3-p484@newgemset/specifications/bundler-1.5.1.gemspec
