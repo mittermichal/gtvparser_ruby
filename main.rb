@@ -18,11 +18,10 @@ end
 # m = new Middleman
 # m.options[:verbose] = true
 
-
 #Hoydaa::Cache.clear_cache!
 Hoydaa::Cache.cache(/.*/, :expires => -1, :store => Hoydaa::FileStore.new("./cache/",5))
 
-get('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/')
-get('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/')
-post('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/',:asd => 1, :dsa => 2)
-post('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/',:dsa => 2 ,:asd => 1)
+p get('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/')
+p get('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/')
+p post('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/',:asd => 1, :dsa => 2)
+p post('http://www.gamestv.org/event/48176-outraged-esports-vs-sstat/statistics/',:dsa => 2 ,:asd => 1)

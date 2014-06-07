@@ -22,8 +22,8 @@ module Net
     end
 
     def HTTP.post_form(uri_or_host, params)
-      uri_post = uri_or_host#.to_s+params.sort.to_s
-      #{:test => 1, :aaa => 2}.sort.each do |k,v| '#{k}=#{v}&' end
+      uri_post = URI(uri_or_host.to_s+URI.encode_www_form(params.sort))
+      #{:test => 1, :aaa => 2}.sort.each do |k,v| '#{k}=#{v}&' end . join('&')
       if (Hoydaa::Cache.cacheable?(uri_post))
         rtn = Hoydaa::Cache.cached?(uri_post)
         if rtn 
@@ -32,10 +32,10 @@ module Net
         end
 
       p "c downloading..."
-      req = Post.new(uri_or_host)
+      req = Post.new(uri_or_host.request_uri)
       req.form_data = params
-      req.basic_auth url.user, url.password if url.user
-      ret = new(url.hostname, url.port).start {|http|
+      req.basic_auth uri_or_host.user, uri_or_host.password if uri_or_host.user
+      ret = new(uri_or_host.hostname, uri_or_host.port).start {|http|
           http.request(req)
       }.body
 
@@ -43,10 +43,10 @@ module Net
         rtn
       else
         p "downloading..."
-      req = Post.new(uri_or_host)
+      req = Post.new(uri_or_host.request_uri)
       req.form_data = params
-      req.basic_auth url.user, url.password if url.user
-      new(url.hostname, url.port).start {|http|
+      req.basic_auth uri_or_host.user, uri_or_host.password if uri_or_host.user
+      new(uri_or_host.hostname, uri_or_host.port).start {|http|
           http.request(req)
       }.body
       end
