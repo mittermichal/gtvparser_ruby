@@ -36,7 +36,7 @@ module Hoydaa
       cache_config = cacheable?(uri)
       return nil if not cache_config
 
-      if (Time.now.to_f > cache_config[:store].last_modified(uri.to_s) + cache_config[:expires])
+      if (cache_config[:expires]!=-1 && Time.now.to_f > cache_config[:store].last_modified(uri.to_s) + cache_config[:expires])
         cache_config[:store].remove(uri.to_s)
         return nil
       end
