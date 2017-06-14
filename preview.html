@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Preview</title>
+</head>
+<body onload="init()">
+<div>
+<img id="map" style="position:relative" src="http://gamestv.org/images/user/maps/8_1305168027.jpg"/>
+<div id="k" style="position:absolute">K</div>
+<div id="d" style="position:absolute">D</div>
+</div>
+<script>
+var k=[-3083,285];
+var d=[-105,2177];
+var map  = document.getElementById('map');
+var ke=document.getElementById('k');
+var de=document.getElementById('d');
+var mins = [-4224, 4352];
+var maxs = [3712, -3584];
+function init() {
+ke.style.top=(k[1]-mins[1])*map.height/(maxs[1]-mins[1]);
+ke.style.left=(k[0]-mins[0])*map.width/(maxs[0]-mins[0]);
+de.style.top=(d[1]-mins[1])*map.height/(maxs[1]-mins[1]);
+de.style.left=(d[0]-mins[0])*map.width/(maxs[0]-mins[0]);
+}
+</script>
+</body>
+</html>
